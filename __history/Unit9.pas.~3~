@@ -1,0 +1,25 @@
+unit Unit9;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.OleCtnrs;
+
+type
+  TTEA_Sort = class(TForm)
+    OleContainer1: TOleContainer;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TEA_Sort: TTEA_Sort;
+
+implementation
+
+{$R *.dfm}
+
+end.

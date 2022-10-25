@@ -1,0 +1,34 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg;
+
+type
+  TTEA_select = class(TForm)
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
+    Image4: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    Image7: TImage;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TEA_select: TTEA_select;
+
+implementation
+
+{$R *.dfm}
+
+
+end.

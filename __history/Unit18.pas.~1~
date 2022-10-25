@@ -1,0 +1,33 @@
+unit Unit18;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.OleCtrls, SHDocVw;
+
+type
+  TCOFFEE_Make1 = class(TForm)
+    Image1: TImage;
+    WebBrowser1: TWebBrowser;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  COFFEE_Make1: TCOFFEE_Make1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TCOFFEE_Make1.FormCreate(Sender: TObject);
+begin
+WebBrowser1.Navigate('D:\ОАиП\Курсовая\Информация\.кофе\Обработка.htm')
+end;
+
+end.

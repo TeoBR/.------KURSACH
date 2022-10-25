@@ -1,0 +1,58 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg;
+
+type
+  TTEA_select = class(TForm)
+    Image: TImage;
+    Sort: TImage;
+    Traditional: TImage;
+    Health: TImage;
+    Make: TImage;
+    History: TImage;
+    Select: TImage;
+    procedure SortMouseEnter(Sender: TObject);
+    procedure SortMouseLeave(Sender: TObject);
+    procedure HistoryMouseEnter(Sender: TObject);
+    procedure HistoryMouseLeave(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TEA_select: TTEA_select;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TTEA_select.HistoryMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\TwoHistory.png')
+end;
+
+procedure TTEA_select.HistoryMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+procedure TTEA_select.SortMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\OneSort.png')
+end;
+
+procedure TTEA_select.SortMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+end.

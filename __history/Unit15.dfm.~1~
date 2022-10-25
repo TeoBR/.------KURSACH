@@ -1,0 +1,15 @@
+object COFFEE_Make: TCOFFEE_Make
+  Left = 0
+  Top = 0
+  ClientHeight = 653
+  ClientWidth = 1092
+  Color = clBtnFace
+  Constraints.MinHeight = 700
+  Constraints.MinWidth = 1110
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+end

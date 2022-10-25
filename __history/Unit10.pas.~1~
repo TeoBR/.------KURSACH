@@ -1,0 +1,33 @@
+unit Unit10;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls;
+
+type
+  TTEA_History = class(TForm)
+    WebBrowser1: TWebBrowser;
+    Image1: TImage;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TEA_History: TTEA_History;
+
+implementation
+
+{$R *.dfm}
+
+procedure TTEA_History.FormCreate(Sender: TObject);
+begin
+WebBrowser1.Navigate('D:\ОАиП\Курсовая\Информация\История.htm');
+end;
+
+end.

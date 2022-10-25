@@ -1,0 +1,46 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Unit1 in 'Unit1.pas' {Loading},
+  Unit2 in 'Unit2.pas' {Select},
+  Unit3 in 'Unit3.pas' {Loading_TEA},
+  Unit4 in 'Unit4.pas' {TEA_select},
+  Unit5 in 'Unit5.pas' {Loading_COFFEE},
+  Unit6 in 'Unit6.pas' {Loading_CAFE},
+  Unit7 in 'Unit7.pas' {COFFEE_select},
+  Unit8 in 'Unit8.pas' {CAFE_Select},
+  Unit9 in 'Unit9.pas' {TEA_Sort},
+  Unit10 in 'Unit10.pas' {TEA_History},
+  Unit11 in 'Unit11.pas' {TEA_Traditional},
+  Unit12 in 'Unit12.pas' {TEA_Health},
+  Unit13 in 'Unit13.pas' {COFFEE_Tree},
+  Unit14 in 'Unit14.pas' {COFFEE_MakeSelect},
+  Unit15 in 'Unit15.pas' {COFFEE_MakeHot},
+  Unit16 in 'Unit16.pas' {COFFEE_MakeCold},
+  Unit17 in 'Unit17.pas' {COFFEE_Health};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TLoading, Loading);
+  Application.CreateForm(TSelect, Select);
+  Application.CreateForm(TLoading_TEA, Loading_TEA);
+  Application.CreateForm(TTEA_select, TEA_select);
+  Application.CreateForm(TLoading_COFFEE, Loading_COFFEE);
+  Application.CreateForm(TLoading_CAFE, Loading_CAFE);
+  Application.CreateForm(TCOFFEE_select, COFFEE_select);
+  Application.CreateForm(TCAFE_Select, CAFE_Select);
+  Application.CreateForm(TTEA_Sort, TEA_Sort);
+  Application.CreateForm(TTEA_History, TEA_History);
+  Application.CreateForm(TTEA_Traditional, TEA_Traditional);
+  Application.CreateForm(TTEA_Health, TEA_Health);
+  Application.CreateForm(TCOFFEE_Tree, COFFEE_Tree);
+  Application.CreateForm(TCOFFEE_MakeSelect, COFFEE_MakeSelect);
+  Application.CreateForm(TCOFFEE_MakeHot, COFFEE_MakeHot);
+  Application.CreateForm(TCOFFEE_MakeCold, COFFEE_MakeCold);
+  Application.CreateForm(TCOFFEE_Health, COFFEE_Health);
+  Application.Run;
+end.

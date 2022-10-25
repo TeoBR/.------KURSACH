@@ -1,0 +1,112 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg;
+
+type
+  TTEA_select = class(TForm)
+    Image: TImage;
+    Sort: TImage;
+    Traditional: TImage;
+    Health: TImage;
+    History: TImage;
+    Select: TImage;
+    Background: TImage;
+    procedure SortMouseEnter(Sender: TObject);
+    procedure SortMouseLeave(Sender: TObject);
+    procedure HistoryMouseEnter(Sender: TObject);
+    procedure HistoryMouseLeave(Sender: TObject);
+    procedure TraditionalMouseEnter(Sender: TObject);
+    procedure TraditionalMouseLeave(Sender: TObject);
+    procedure HealthMouseEnter(Sender: TObject);
+    procedure HealthMouseLeave(Sender: TObject);
+    procedure SortClick(Sender: TObject);
+    procedure HistoryClick(Sender: TObject);
+    procedure TraditionalClick(Sender: TObject);
+    procedure HealthClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TEA_select: TTEA_select;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit9, Unit10, Unit11, Unit12;
+
+
+procedure TTEA_select.HealthClick(Sender: TObject);
+begin
+TEA_select.Close;
+TEA_Health.Show;
+end;
+
+procedure TTEA_select.HealthMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\FourHealth.png')
+end;
+
+procedure TTEA_select.HealthMouseLeave(Sender: TObject);
+begin
+ Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+procedure TTEA_select.HistoryClick(Sender: TObject);
+begin
+TEA_select.Close;
+TEA_History.Show;
+end;
+
+procedure TTEA_select.HistoryMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\TwoHistory.png')
+end;
+
+procedure TTEA_select.HistoryMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+procedure TTEA_select.SortClick(Sender: TObject);
+begin
+TEA_select.Close;
+TEA_Sort.Show;
+end;
+
+procedure TTEA_select.SortMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\OneSort.png')
+end;
+
+procedure TTEA_select.SortMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+procedure TTEA_select.TraditionalClick(Sender: TObject);
+begin
+TEA_select.Close;
+TEA_Traditional.Show;
+end;
+
+procedure TTEA_select.TraditionalMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ThreeTraditional.png')
+end;
+
+procedure TTEA_select.TraditionalMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\чай выбор\ZeroDefolt.png')
+end;
+
+end.

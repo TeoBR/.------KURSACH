@@ -1,0 +1,33 @@
+unit Unit17;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls;
+
+type
+  TCOFFEE_Health = class(TForm)
+    WebBrowser1: TWebBrowser;
+    Image1: TImage;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  COFFEE_Health: TCOFFEE_Health;
+
+implementation
+
+{$R *.dfm}
+
+procedure TCOFFEE_Health.FormCreate(Sender: TObject);
+begin
+WebBrowser1.Navigate('D:\ОАиП\Курсовая\Информация\.кофе\Влияние на здоровье.htm')
+end;
+
+end.

@@ -1,0 +1,79 @@
+unit Unit7;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TCOFFEE_select = class(TForm)
+    Background: TImage;
+    Select_Coffee: TImage;
+    Panel: TImage;
+    Tree: TImage;
+    Make: TImage;
+    Make1: TImage;
+    Health: TImage;
+    procedure TreeMouseEnter(Sender: TObject);
+    procedure TreeMouseLeave(Sender: TObject);
+    procedure MakeMouseEnter(Sender: TObject);
+    procedure MakeMouseLeave(Sender: TObject);
+    procedure Make1MouseEnter(Sender: TObject);
+    procedure Make1MouseLeave(Sender: TObject);
+    procedure HealthMouseEnter(Sender: TObject);
+    procedure HealthMouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  COFFEE_select: TCOFFEE_select;
+
+implementation
+
+{$R *.dfm}
+
+procedure TCOFFEE_select.HealthMouseEnter(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\FourHealth.png')
+end;
+
+procedure TCOFFEE_select.HealthMouseLeave(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\ZeroDefoult.png')
+end;
+
+procedure TCOFFEE_select.Make1MouseEnter(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\ThreeMake2.png')
+end;
+
+procedure TCOFFEE_select.Make1MouseLeave(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\ZeroDefoult.png')
+end;
+
+procedure TCOFFEE_select.MakeMouseEnter(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\TwoMake.png')
+end;
+
+procedure TCOFFEE_select.MakeMouseLeave(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\ZeroDefoult.png')
+end;
+
+procedure TCOFFEE_select.TreeMouseEnter(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\OneCoffeeTree.png')
+end;
+
+procedure TCOFFEE_select.TreeMouseLeave(Sender: TObject);
+begin
+Select_coffee.Picture.LoadFromFile('D:\\ќјиѕ\\ урсова€\\выбор\\кофе выбор\\ZeroDefoult.png')
+end;
+
+end.

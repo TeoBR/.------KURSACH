@@ -1,0 +1,46 @@
+unit Unit8;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TCAFE_Select = class(TForm)
+    Backgound: TImage;
+    Menu: TImage;
+    Select: TImage;
+    Jezva: TLabel;
+    Americano: TLabel;
+    ProstoCofe: TLabel;
+    Teplo: TLabel;
+    procedure JezvaMouseEnter(Sender: TObject);
+    procedure JezvaMouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  CAFE_Select: TCAFE_Select;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TCAFE_Select.JezvaMouseEnter(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\кафе выбор\\OneJezva.png')
+end;
+
+procedure TCAFE_Select.JezvaMouseLeave(Sender: TObject);
+begin
+Select.Picture.LoadFromFile('D:\ќјиѕ\ урсова€\выбор\кафе выбор\\ZeroDefoult.png')
+end;
+
+end.

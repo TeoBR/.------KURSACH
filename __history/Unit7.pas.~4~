@@ -1,0 +1,27 @@
+unit Unit7;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TCOFFEE_select = class(TForm)
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  COFFEE_select: TCOFFEE_select;
+
+implementation
+
+{$R *.dfm}
+
+end.

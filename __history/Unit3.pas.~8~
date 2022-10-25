@@ -1,0 +1,57 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg;
+
+type
+  TLoading_TEA = class(TForm)
+    Image1: TImage;
+    Button1: TButton;
+    Timer1: TTimer;
+    procedure Button1Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Loading_TEA: TLoading_TEA;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit2, Unit4;
+
+
+
+
+
+procedure TLoading_TEA.Button1Click(Sender: TObject);
+begin
+Loading_TEA.Close;
+TEA_Select.Show;
+end;
+
+
+
+procedure TLoading_TEA.FormCreate(Sender: TObject);
+begin
+Timer1.Enabled:=True;
+end;
+
+procedure TLoading_TEA.Timer1Timer(Sender: TObject);
+begin
+Timer1.Enabled:=False;
+Loading_TEA.Close;
+TEA_Select.Show;
+end;
+
+end.

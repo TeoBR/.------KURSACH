@@ -1,0 +1,44 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TLoading = class(TForm)
+    Loading: TImage;
+    Image1: TImage;
+    procedure Button1Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Loading: TLoading;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+procedure TLoading.Button1Click(Sender: TObject);
+begin
+Loading.Hide;
+Select.Show;
+end;
+
+
+procedure TLoading.Image1Click(Sender: TObject);
+begin
+Loading.Hide;
+Select.Show;
+end;
+
+end.

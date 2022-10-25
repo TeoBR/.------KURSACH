@@ -1,0 +1,33 @@
+unit Unit16;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.OleCtrls, SHDocVw;
+
+type
+  TCOFFEE_MakeCold = class(TForm)
+    Image1: TImage;
+    WebBrowser1: TWebBrowser;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  COFFEE_MakeCold: TCOFFEE_MakeCold;
+
+implementation
+
+{$R *.dfm}
+
+procedure TCOFFEE_MakeCold.FormCreate(Sender: TObject);
+begin
+WebBrowser1.Navigate('D:\ОАиП\Курсовая\Информация\.кофе\Холодные напитки.htm')
+end;
+
+end.
